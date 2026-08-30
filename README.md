@@ -44,4 +44,4 @@ Build strong DSA fundamentals and become better at solving problems consistently
 
 ## LeetCode
 
-[My LeetCode Profile](https://github.com/harshit070908-bot)
+[My LeetCode Profile](https://leetcode.com/u/Harshitrana0809/)

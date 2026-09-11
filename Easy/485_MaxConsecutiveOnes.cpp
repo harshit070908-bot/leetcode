@@ -8,13 +8,11 @@ public:
         for(size_t i {}; i < nums.size(); i++){
             if(nums[i] == 1){
                 curr++;
+                max = (max < curr) ? curr : max;
                 continue;
             }
-            max = std::max(max, curr);
             curr = 0;
         }
-
-        max = std::max(max, curr);
 
         return max;
     }

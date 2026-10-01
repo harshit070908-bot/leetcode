@@ -17,7 +17,7 @@ public:
         push(root->right, result);
         result.push_back(root->val);
     }
-    vector<int> postorderTraversal(TreeNode* root) {
+    std::vector<int> postorderTraversal(TreeNode* root) {
         std::vector<int> result;
         push(root, result);
         return result;

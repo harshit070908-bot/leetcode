@@ -27,10 +27,10 @@ Each solution contains the C++ implementation along with the approach and time a
 
 | Difficulty | Solved |
 | ---------- | ------ |
-| Easy       | 116    |
+| Easy       | 119    |
 | Medium     | 28     |
 | Hard       | 0      |
-| Total      | 144    |
+| Total      | 147    |
 
 This repository is continuously updated as I solve more problems.
 

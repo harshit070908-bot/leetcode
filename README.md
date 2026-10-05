@@ -28,9 +28,9 @@ Each solution contains the C++ implementation along with the approach and time a
 | Difficulty | Solved |
 | ---------- | ------ |
 | Easy       | 120    |
-| Medium     | 30     |
+| Medium     | 33     |
 | Hard       | 0      |
-| Total      | 150    |
+| Total      | 153    |
 
 This repository is continuously updated as I solve more problems.
 

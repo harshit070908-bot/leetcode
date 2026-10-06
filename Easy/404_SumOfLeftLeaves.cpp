@@ -18,7 +18,7 @@ public:
         std::stack<TreeNode*> st;
 
         while(current || !st.empty()){
-
+            
             while(current){
                 st.push(current);
                 current = current->left;

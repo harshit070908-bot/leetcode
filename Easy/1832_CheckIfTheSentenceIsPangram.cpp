@@ -1,10 +1,21 @@
 #include <string>
-#include <unordered_set>
 
 class Solution {
 public:
     bool checkIfPangram(std::string sentence) {
-        std::unordered_set<char> chars(sentence.begin(), sentence.end());
-        return chars.size() == 26;
+        int count {};
+ 
+        bool* arr = new bool[26] {};
+
+        for(char i : sentence){
+            if(!arr[i - 'a']){
+                arr[i - 'a'] = 1;
+                count++;
+            }
+        }
+
+        delete[] arr;
+
+        return count == 26;
     }
 };

@@ -4,17 +4,18 @@
 class Solution {
 public:
     bool checkIfExist(std::vector<int>& arr) {
-        std::unordered_set<int> seen;
+        std::unordered_set<int> checked;
 
-        for(int i : arr) {
-            if(seen.count(2 * i) ||
-               (i % 2 == 0 && seen.count(i / 2))) {
-                return true;
+        for(int i : arr){
+            if(checked.contains(i * 2)){
+                return 1;
             }
-
-            seen.insert(i);
+            if(i % 2 == 0 && checked.contains(i / 2)){
+                return 1;
+            }
+            checked.insert(i);
         }
 
-        return false;
+        return 0;
     }
 };

@@ -5,20 +5,21 @@
 class Solution {
 public:
     int countConsistentStrings(std::string allowed, std::vector<std::string>& words) {
-        std::unordered_set<char> chars(allowed.begin(), allowed.end());
         int result {};
 
-        for(std::string& word : words) {
-            bool valid = true;
+        std::unordered_set<char> ac;
+        for(char i : allowed){
+            ac.insert(i);
+        }
 
-            for(char c : word) {
-                if(!chars.count(c)) {
-                    valid = false;
+        for(std::string& i : words){
+            for(char j : i){
+                if(!ac.contains(j)){
+                    result--;
                     break;
                 }
             }
-
-            if(valid) result++;
+            result++;
         }
 
         return result;
